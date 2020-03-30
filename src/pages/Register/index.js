@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiInfo } from 'react-icons/fi'
 
@@ -8,13 +8,23 @@ import logoImg from '../../assets/logo.svg'
 
 
 export default function Register() {
+    const [equipe1, setEquipe1] = useState('')
+    const [equipe2, setEquipe2] = useState('')
+    const [equipe3, setEquipe3] = useState('')
+
     const history = useHistory()
 
-    function handleRegister(e) {
+    function handleSubmit (e) {
         e.preventDefault()
+        
+        window.sessionStorage.setItem('equipe1', equipe1)
+        window.sessionStorage.setItem('equipe2', equipe2)
+        window.sessionStorage.setItem('equipe3', equipe3)
 
         history.push('/dashboard')
+        
     }
+
 
     return (
         <div className="register-container">
@@ -28,24 +38,25 @@ export default function Register() {
                         Instruções
                     </Link>
                 </section>
-                <form onSubmit={handleRegister}>
+                <form onSubmit={handleSubmit}>
                     <input
-                        name="eq1"
+                        value={equipe1}
                         placeholder="Digite o nome da equipe 1..."
+                        onChange={e => setEquipe1(e.target.value)}
                        
                     />
                     <input
-                        name="eq2"
+                        value={equipe2}
                         placeholder="Digite o nome da equipe 2..."
-
+                        onChange={e => setEquipe2(e.target.value)}
                     />
                     <input
-                        name="eq3"
+                        value={equipe3}
                         placeholder="Digite o nome da equipe 3..."
-
+                        onChange={e => setEquipe3(e.target.value)}
                     />
                     
-
+                
                     <button className="button" type="submit">Jogar</button>
                 </form>
             </div>

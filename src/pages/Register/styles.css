@@ -55,10 +55,11 @@
 }
 
 @media (max-width: 600px) {
+
     .register-container .content {
         flex-direction: column;
 
-        padding: 60px;
+        padding: 25px;
     }
 
     .back-link {
@@ -68,9 +69,11 @@
 
     .register-container .content section h1 {
         font-size: 3rem;
+        margin: 30px 0 32px;
     }
 
     .register-container .content section p {
         font-size: 1.6rem;
     }
+
 } 

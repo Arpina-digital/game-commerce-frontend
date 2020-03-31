@@ -199,6 +199,10 @@
     .profile-container header span {
         display: none;
     }
+
+    .profile-container header a {
+        margin-left: 15px;
+    }
 }
 
 

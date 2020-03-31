@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { FiLogIn } from 'react-icons/fi'
+import { FiInfo } from 'react-icons/fi'
 
 import './styles.css'
 
@@ -26,8 +26,8 @@ export default function Logon() {
                     <button className="button"type="submit">Começar</button>
 
                     <Link className="back-link" to="/">
-                        <FiLogIn size={16} color="#CF4C48"/>
-                        Configurações
+                        <FiInfo size={16} color='#CF4C48'/>
+                        Instruções
                     </Link>
 
                 </form>

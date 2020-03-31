@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiPower } from 'react-icons/fi'
 
+import Question1 from '../../Questions'
+
 import './styles.css'
 
 import logoImg from '../../assets/logo.svg'

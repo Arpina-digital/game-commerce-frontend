@@ -1,5 +1,5 @@
 .logon-container {
-    width: 100%;
+    width: 90%;
     max-width: 1120px;
     height: 100vh;
     margin: 0 auto;
@@ -11,6 +11,7 @@
 
 .logon-container section.form {
     width: 100%;
+    min-width: 280px;
     max-width: 350px;
     margin-right: 30px;
 }
@@ -20,8 +21,25 @@
 }
 
 .logon-container section.form form h1{
-    font-size: 32px;
+    font-size: 3.2rem;
     margin-bottom: 32px;
+}
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 50%;
+    }
+    
+    .imgHero {
+        display: none;
+    }
+
+    .logon-container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 

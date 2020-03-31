@@ -62,9 +62,10 @@ form textarea {
     margin-top: 16px;
     display: inline-block;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     font-size: 1.8rem;
-    line-height: 6.0rem;
+    line-height: 7.3rem;
     transition: filter 0.2s;
 }
 
